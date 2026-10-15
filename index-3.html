@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LifeLink Mesh | SOS Without a Network</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <span class="badge">Emergency communication concept</span>
+    <h1>LifeLink Mesh</h1>
+    <p class="lead">When mobile networks fail, phones can still pass an SOS from one to the next until it reaches rescue teams. Try it below.</p>
+  </header>
+
+  <main>
+    <div class="stage">
+      <svg id="map" viewBox="0 0 600 380" role="img" aria-label="Mesh network simulation"></svg>
+    </div>
+
+    <div class="legend">
+      <span><i class="dot you"></i> You</span>
+      <span><i class="dot relay"></i> Relay phones</span>
+      <span><i class="dot base"></i> Rescue base</span>
+      <span><i class="dot offdot"></i> Offline</span>
+    </div>
+
+    <div class="controls">
+      <button id="sendBtn">Send SOS</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+    <div id="status" role="status">Tap any coloured phone to switch it off, then send the SOS and see if it still finds a route.</div>
+
+    <h2>How it works</h2>
+    <div class="cards">
+      <div class="card c1"><h3>Connect</h3><p>Each phone links to nearby phones using Bluetooth or Wi-Fi Direct.</p></div>
+      <div class="card c2"><h3>Hop</h3><p>The SOS message jumps from phone to phone until it reaches a rescue base.</p></div>
+      <div class="card c3"><h3>Reroute</h3><p>If one phone goes offline, the message looks for another path.</p></div>
+    </div>
+  </main>
+
+  <footer>
+    Concept demo by Aman Yadav &middot;
+    <a href="https://github.com/amanyadav991980">GitHub</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
